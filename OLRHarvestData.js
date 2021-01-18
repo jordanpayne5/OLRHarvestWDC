@@ -363,8 +363,6 @@ var tableData = [];
 function callAPI(table, doneCallback, index, row, dateFilterStr) {
     $.ajax({
         beforeSend: function(request) {
-            var accessToken = "1747113.pt.a99fulcFCkg-VxZH5Wejm2luzd7lFGr2zL2y1pHsYaV8Qqw3xjrOXAmOEXEjwxuFfbCXnSdv8zKKvOSMZ9by7w"
-            var accountID = "251865";
             request.setRequestHeader("User-Agent", "MyApp (jordan.payne@online-rewards.com)");
             request.setRequestHeader("Authorization", "Bearer " + accessToken);
             request.setRequestHeader("Harvest-Account-ID", accountID);
